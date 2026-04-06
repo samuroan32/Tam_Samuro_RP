@@ -1,0 +1,13 @@
+{
+  "rules": {
+    "rooms": {
+      "$roomCode": {
+        ".read": true,
+        ".write": true,
+        "participants": {
+          ".validate": "newData.hasChildren() && newData.childrenCount <= 2"
+        }
+      }
+    }
+  }
+}
